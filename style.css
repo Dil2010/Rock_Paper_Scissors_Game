@@ -65,7 +65,7 @@ body{
     display: flex;
     width: 476px;
     height: 430px;    
-    margin-top: 100px ;
+    margin-top: 50px ;
     background-image: url("assets/triangle.png");
     background-repeat: no-repeat;
     background-position: center;
