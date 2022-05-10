@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    <div class="Header">
+        <div class="Header_part1_scoreboard">
+            <div class="Header_part1_scoreboard_title">
+                <img src="/assets/title.png">
+            </div>
+            <div class="Header_part1_scoreboard_score">
+                <p>SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+        <div class="Header_part2_hands">
+            <div class="Header_part2_hands_hand Header_part2_hands_paper">
+                <img src="/assets/Paper.png" onclick="pickUserHand('paper')"/>
+            </div>
+            <div class="Header_part2_hands_hand Header_part2_hands_scissor">
+                <img src="/assets/Scissors.png" onclick="pickUserHand('scissors')"/>
+            </div>
+            <div class="Header_part2_hands_hand Header_part2_hands_rock">
+                <img src="/assets/Rock.png" onclick="pickUserHand('rock')" />
+            </div>
+        </div>
+
+        <div class="Header_part3_contest">
+            <div class="Header_part3_contest_userhand">
+                <h1>YOU PICKED</h1>
+                <div class="Header_part3_contest_handimage">
+                    <img id="userPickImage" src="/assets/Paper.png">
+                </div>
+            </div>
+            <div class="Header_part3_contest_referee">
+                <div class="Header_part3_contest_referee_decision">
+                    <h1>YOU WIN!</h1>
+                </div>
+                <div class="Header_part3_contest_referee_newgame" onclick="restartGame()">
+                    <p>PLAY AGAIN</p>
+                </div>
+            </div>
+            <div class="Header_part3_contest_computerhand">
+                <h1>THE COMPUTER PICKED</h1>
+                <div class="Header_part3_contest_handimage">
+                    <img id="computerPickImage" src="/assets/Paper.png">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script>   
+</body>
+</html>
