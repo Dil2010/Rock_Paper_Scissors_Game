@@ -1,3 +1,3 @@
-# Rock_Paper_Scissors_Game
+# Rock Paper Scissors Game
 
 ![Sunnyside for Desktop](/Rock.png)
